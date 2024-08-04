@@ -4,6 +4,7 @@ import React, { useState } from 'react'
 import Task from '@/app/components/Task'
 import Sidenav from '../components/Sidenav'
 import Notifications from '../components/Notifications'
+import Diet from '../components/Diet'
 
 const Page = () => {
   const [itemList,setItemList]=useState<{task:string, time:string}[]>([]);

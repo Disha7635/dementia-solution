@@ -11,6 +11,7 @@ import GroupAddIcon from '@mui/icons-material/GroupAdd';
 import LogoutIcon from '@mui/icons-material/Logout';
 import PersonAddIcon from '@mui/icons-material/PersonAdd';
 import ChatIcon from '@mui/icons-material/Chat';
+import RestaurantMenuIcon from '@mui/icons-material/RestaurantMenu';
 import Link from "next/link";
 import {usePathname} from "next/navigation";
 import { AnyCnameRecord } from 'dns';
@@ -101,6 +102,14 @@ const Sidenav = () => {
                 <div className={styles.item}>
                   <ChatIcon />
                   <span className={styles.collapse}>Dementia Support Chatbot</span>
+                </div>
+              </Link>
+            </li>
+            <li>
+              <Link className={pathname==="/meal" ? styles.active : ""} href="/meal">
+                <div className={styles.item}>
+                  <RestaurantMenuIcon />
+                  <span className={styles.collapse}>Meal Plan</span>
                 </div>
               </Link>
             </li>
